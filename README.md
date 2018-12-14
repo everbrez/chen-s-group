@@ -3,6 +3,13 @@
 
 ## Contribution
 
+### designs 设计稿
+`ftp://incoming/16hope/**/project/chen's group/`
+
+### demand
+1. ie9+
+2. responsive design 响应式
+
 ### download packages
 `npm i`
 
