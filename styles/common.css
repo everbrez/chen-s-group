@@ -30,8 +30,27 @@ img {
   margin: auto;
 }
 
-/* header */
-.header .container{
+@media (max-width: 1350px ) and (min-width: 979px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 979px) and (min-width: 808px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 808px) {
+  .container {
+    max-width: none;
+    width: auto;
+    padding: 2.3%;
+  }
+}
+
+/* header */.header .container{
   height: 120px;
   line-height: 120px;
   display: flex;
@@ -60,9 +79,30 @@ img {
   font-weight: 6500;
 }
 
+.header-title .ch-title span {
+  white-space: nowrap;
+  line-height: 1.3;
+}
+
 .header-title .ch-title {
   font-size: 24px;
   margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .header-title {
+    display: none;
+  }
+  .header .container {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 553px) {
+  .header .container {
+    height: 5em;
+  }
 }
 
 /* navigation */
@@ -73,6 +113,7 @@ img {
 .nav-lists {
   font-size: 0;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -103,6 +144,48 @@ img {
   position: relative;
 }
 
+@media (max-width: 808px) {
+  body {
+    position: relative;
+    padding-top: 2.5em;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    height: 2.5em;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav .container {
+    padding: 0;
+  }
+
+  .nav-lists {
+    background: #a11c78;
+    padding-top: 2.5em;
+    font-size: 1em;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    transition: left cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
+  }
+
+  .nav.show .nav-lists{
+    left: 0;
+  }
+  .nav-lists .nav-item{
+    display: block;
+    width: 100%;
+    flex: 1 100%;
+  }
+}
+
 /* footer */
 .footer {
   height: 140px;
@@ -113,6 +196,7 @@ img {
   line-height: 140px;
   vertical-align: middle;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -122,7 +206,7 @@ img {
   vertical-align: middle;
 }
 
-.info span{
+.info > span{
   display: block;
   line-height: 2.5;
 }
@@ -135,4 +219,35 @@ img {
 
 .footer-logo img {
   vertical-align: middle;
+}
+
+@media (max-width: 845px) {
+  .footer {
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 1em 0;
+    overflow: hidden;
+  }
+  .footer-logo {
+    float: none;
+    flex: 1 100%;
+    line-height: 1;
+    order: 1;
+  }
+
+  .info {
+    display: block;
+    flex: 1 100%;
+    order: 2;
+    margin-top: 1em;
+  }
+  
+  .info > span {
+    line-height: 1.5;
+  }
+
+  .info > span span {
+    white-space: nowrap;
+  }
 }
