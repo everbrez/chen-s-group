@@ -1,0 +1,44 @@
+body {
+  font-size: 16px;
+}
+
+.container {
+  min-width: 1200px;
+  margin: auto;
+}
+
+/* header */
+.header {
+  height: 120px;
+  display: block;
+  display: flex;
+  
+}
+
+.header .container {
+  height: 100%;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.header-title {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.header-title .ch-title, .header-title .en-title {
+  display: block;
+  color: #a11c78;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+  font-weight: 6500;
+}
+
+.header-title .ch-title {
+  font-size: 24px;
+  margin-bottom: 12px;
+
+}
