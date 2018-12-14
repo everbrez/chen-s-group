@@ -17,6 +17,7 @@ a:hover {
 
 ul, ol {
   margin: 0;
+  padding: 0;
 }
 
 img {
@@ -25,7 +26,7 @@ img {
 
 .container {
   display: block;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
 }
 
@@ -71,12 +72,17 @@ img {
 
 .nav-lists {
   font-size: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .nav-lists .nav-item {
   display: inline-block;
   position: relative;
-  width: 12.5%
+  width: 12.5%;
+  text-align: center;
+  flex: 1;
 }
 
 .nav-item .nav-link {
@@ -85,6 +91,7 @@ img {
   color: #fff;
   line-height: 45px;
   font-size: 16px;
+  width: 100%;
 }
 
 .nav-dropdown {
