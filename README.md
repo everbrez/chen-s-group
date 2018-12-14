@@ -20,7 +20,7 @@
 ```
 Chen's Group
 │  .gitignore
-│  index.html // 索引文件，方便开发，dev server返回默认网页
+│  index.html // 索引文件，dev server返回默认网页，重构网页时可以添加自己的网页链接进去，方便开发
 │  package.json
 │  README.md
 ├─html  // 首页、栏目页、内容页html文件
