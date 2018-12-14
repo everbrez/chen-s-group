@@ -11,7 +11,7 @@ a:active, a:visited, a:focus {
   color: inherit;
 }
 
-a:hover {
+a:hover, a:active {
   color: #a11c78;
 }
 
@@ -83,6 +83,10 @@ img {
   width: 12.5%;
   text-align: center;
   flex: 1;
+}
+
+.nav-lists .nav-item:hover {
+  background: #8d1669;
 }
 
 .nav-item .nav-link {
