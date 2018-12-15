@@ -9,6 +9,7 @@
 ### demand
 1. ie9+
 2. responsive design 响应式
+3. 中英文版本
 
 ### download packages
 `npm i`
