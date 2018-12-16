@@ -26,11 +26,17 @@ img {
 
 .container {
   display: block;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: auto;
 }
 
-@media (max-width: 1350px ) and (min-width: 979px) {
+@media (max-width: 1350px ) and (min-width: 1250px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1250px ) and (min-width: 979px) {
   .container {
     max-width: 900px;
   }
@@ -46,7 +52,7 @@ img {
   .container {
     max-width: none;
     width: auto;
-    padding: 2.3%;
+    padding: 0 2.3%;
   }
 }
 

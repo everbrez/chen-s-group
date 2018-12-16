@@ -11,6 +11,12 @@ h1.title {
   padding-top: 50px;
 }
 
+@media (min-width: 1350px) {
+  .research .container, .news .container, .achievement .container {
+    max-width: 1300px;
+  }
+}
+
 /* research */
 .research {
   padding-bottom: 40px;
