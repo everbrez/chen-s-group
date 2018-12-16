@@ -219,6 +219,10 @@ h1.title {
   left: -100%;
 }
 
+.swiper-item img {
+  width: 100%;
+}
+
 .swiper-item.current {
   left: 0;
 }
