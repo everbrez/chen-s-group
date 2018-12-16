@@ -257,3 +257,83 @@ img {
     white-space: nowrap;
   }
 }
+
+/* banner */
+.banner {
+  font-size: 0;
+}
+
+@media (max-width: 1350px) {
+  .banner .container {
+    max-width: none;
+    padding: 0;
+  }
+}
+
+/* breadcrumb */
+.breadcrumb {
+  line-height: 66px;
+  margin-top: 13px;
+}
+
+.breadcrumb .container {
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #969696;
+  background: url(../images/location.png) left .75em no-repeat;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.location {
+  padding-left: 26px;
+}
+
+@media (max-width: 808px) {
+  .breadcrumb .container {
+    background-position: 2.3% .75em;
+  }
+}
+
+/* pager */
+.pager {
+  margin-bottom: 38px;
+}
+.pager-list {
+  text-align: center;
+  font-size: 14px;
+  color: #888e9c;
+}
+.pager-item {
+  display: inline-block;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  margin: 5px 5px;
+}
+
+.pager-item:hover {
+  border-color: #a11c78;
+  color: #a11c78;
+}
+
+.pager-item a {
+  display: inline-block;
+  padding: 10px 6px;
+  min-width: 18.7px;
+  line-height: 1;
+}
+
+.pager-more {
+  border: none;
+  margin: 0;
+}
+
+.pager-more a {
+  min-width: auto;
+}
+@media (max-width: 768px) {
+  .pager {
+    margin-bottom: 19px;
+  }
+}
