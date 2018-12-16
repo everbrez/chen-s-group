@@ -177,19 +177,68 @@ img {
     align-content: flex-start;
     position: fixed;
     top: 0;
-    width: 100%;
     height: 100%;
     left: 100%;
     transition: left cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
   }
 
   .nav.show .nav-lists{
-    left: 0;
+    left: 30%;
+    right: 0;
+    z-index: 10;
   }
   .nav-lists .nav-item{
     display: block;
     width: 100%;
     flex: 1 100%;
+  }
+
+  .nav-show, .nav-close {
+    width: 32px;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+  }
+
+  .nav-show {
+   z-index: 0;
+  }
+
+  .nav-close {
+    height: 2.5em;
+    z-index: 20;
+    right: 0;
+  }
+
+  .nav-close::before, .nav-close::after, .nav-show::before, .nav-show::after {
+    content: '';
+    display: inline-block;
+    width: 80%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    border-radius: 1px;
+  }
+
+  .nav-close::before {
+    transform: rotate(45deg)
+  }
+
+  .nav-close::after {
+    transform: rotate(-45deg)
+  }
+
+  .nav-show::before {
+    top: 35%;
+    transform: rotate(-30deg)
+  }
+
+  .nav-show::after {
+    top: 65%;
+    transform: rotate(30deg)
   }
 }
 

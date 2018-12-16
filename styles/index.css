@@ -67,6 +67,8 @@ h1.title {
   }
   .research-content .research-item {
     flex: 1 100%;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .research-content .research-item:last-child {

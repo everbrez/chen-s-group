@@ -95,12 +95,9 @@ class Slider {
   }
 
   setStyle(node, styles) {
-    console.log(node, styles)
     Object.keys(styles).forEach(key => {
-      console.log(key === 'transition')
       node.style[key] = styles[key]
     })
-    console.log(node)
   }
 
   clearStyle(node) {
