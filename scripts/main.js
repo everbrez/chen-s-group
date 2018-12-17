@@ -1,17 +1,11 @@
-// window.addEventListener('load', () => {
-//   navToggle()
-
-//   function navToggle() {
-//     const nav = document.getElementById('nav')
-//     const showBtn = document.getElementById('nav-show')
-//     const closeBtn = document.getElementById('nav-close')
-//     const mark = document.getElementById('nav-mark')
-
-//     mark.addEventListener('click', e => {
-//       e.stopPropagation()
-//       nav.classList.remove('show')
-//     }, true)
-//     showBtn.addEventListener('click', () => nav.classList.add('show'), false)
-//     closeBtn.addEventListener('click', () => nav.classList.remove('show'), false)
-//   }
-// }, false)
+window.addEventListener('load', () => {
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: 3000,
+    simulateTouch : false,
+    paginationClickable :true,
+    pagination: '.swiper-pagination',
+    autoplayDisableOnInteraction: false,
+  })
+}, false)

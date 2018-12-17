@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>主页</title>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"> -->
+  <link rel="stylesheet" href="../styles/swiper.min.css">
   <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="../styles/common.css">
   <link rel="stylesheet" href="../styles/index.css">
@@ -99,7 +101,7 @@
     </div>
   </nav>
 
-  <section class="slider">
+  <!-- <section class="slider">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-item">
@@ -116,6 +118,16 @@
         </div>
       </div>
     </div>
+  </section> -->
+
+  <section class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../images/slider1.png" alt="slider1"></div>
+          <div class="swiper-slide"><img src="../images/slider2.png" alt="slider2"></div>
+          <div class="swiper-slide"><img src="../images/slider1.png" alt="slider1"></div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
   </section>
 
   <section class="research">
@@ -230,7 +242,8 @@
   </footer>
 
   <script src="../scripts/main.js"></script>
-  <script src="../scripts/slider.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script> -->
+  <script src="../scripts/swiper.min.js"></script>
 </body>
 
 </html>
