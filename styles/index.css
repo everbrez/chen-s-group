@@ -213,3 +213,12 @@ h1.title {
 .swiper-pagination-bullet-active {
   background: #a11c78;
 }
+
+.swiper-slide {
+  font-size: 0;
+}
+
+.swiper-container img {
+  width: 100%;
+  height: auto;
+}

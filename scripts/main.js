@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+window.addEventListener('load', function() {
   var mySwiper = new Swiper ('.swiper-container', {
     direction: 'horizontal',
     loop: true,
