@@ -2,7 +2,7 @@
 h1.title {
   color: #a11c78;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: bold;
   margin: 0 0 30px;
   text-align: center;
 }
@@ -197,6 +197,9 @@ h1.title {
   }
   h1.title {
     margin-bottom: 1em;
+  }
+  .news-item .news-item-detail {
+    padding: 20px 20px 0;
   }
 }
 
