@@ -2,6 +2,7 @@
 h1.title {
   color: #a11c78;
   font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 0 0 30px;
   text-align: center;
@@ -34,6 +35,7 @@ h1.title {
   width: 50%;
   display: inline-block;
   font-size: 14px;
+  font-size: 0.875rem;
   padding-left: 35px;
   padding-right: 42px;
   flex: 1;
@@ -53,6 +55,7 @@ h1.title {
 
 .research-item-title {
   font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   color: #333;
 }
@@ -118,6 +121,7 @@ h1.title {
   padding: 0 30px;
   padding-top: 20px;
   font-size: 14px;
+  font-size: 0.875rem;
   height: 75px;
   position: absolute;
   bottom: -75px;
@@ -147,6 +151,7 @@ h1.title {
   border: #d1d1d1 1px solid;
   border-radius: 4px;
   font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1;
 }
 
@@ -158,6 +163,7 @@ h1.title {
 
 .achievement-item-detail {
   font-size: 16px;
+  font-size: 1rem;
   margin-top: 17px;
   line-height: 1.5625;
   color: #333;

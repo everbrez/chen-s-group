@@ -1,6 +1,12 @@
-body {
+body, html {
   font-size: 16px;
   color: #333;
+}
+
+@media (max-width: 768px) {
+  body, html {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -81,6 +87,7 @@ img {
   display: block;
   color: #a11c78;
   font-size: 14px;
+  font-size: 0.875rem;
   text-align: center;
   line-height: 1;
   font-weight: 6500;
@@ -93,6 +100,7 @@ img {
 
 .header-title .ch-title {
   font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 12px;
 }
 
@@ -143,6 +151,7 @@ img {
   color: #fff;
   line-height: 45px;
   font-size: 16px;
+  font-size: 1rem;
   width: 100%;
 }
 
@@ -359,6 +368,7 @@ img {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
+  font-size: 0.875rem;
   line-height: 2.2857;
 }
 
@@ -370,6 +380,7 @@ img {
 .footer-1 .link-title {
   color: #a11c78;
   font-size: 16px;
+  font-size: 1rem;
 }
 
 @media (max-width: 845px) {
@@ -437,6 +448,7 @@ img {
   padding-bottom: 11.5px;
   line-height: 1.5;
   font-size: 14px;
+  font-size: 0.875rem;
   color: #969696;
   background: url(../images/location.png) left .75em no-repeat;
   border-bottom: 1px solid #d2d2d2;
@@ -459,6 +471,7 @@ img {
 .pager-list {
   text-align: center;
   font-size: 14px;
+  font-size: 0.875rem;
   color: #888e9c;
 }
 .pager-item {

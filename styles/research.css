@@ -5,6 +5,7 @@
 .research-title {
   color: #a11c78;
   font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 1em;
   margin-top: 60px;
 }
@@ -35,6 +36,7 @@
 
 .research-subtitle {
   font-size: 18px;
+  font-size: 1.125rem;
   color: #a11c78;
   margin-top: 57px;
 }
