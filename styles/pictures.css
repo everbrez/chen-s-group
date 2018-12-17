@@ -106,6 +106,9 @@
   .pictures-item {
     margin-bottom: 20px;
   }
+  .picture {
+    padding: 30px 25px 35px;
+  }
 }
 
 
