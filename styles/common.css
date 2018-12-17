@@ -178,109 +178,6 @@ img {
   .nav {
     padding: 8px 0;
   }
-
-  /* 展开菜单 */
-  /* body {
-    position: relative;
-    padding-top: 2.5em;
-  }
-  .nav {
-    position: fixed;
-    top: 0;
-    height: 2.5em;
-    width: 100%;
-    z-index: 1000;
-  }
-
-  .nav .container {
-    padding: 0;
-  }
-
-  .nav-lists {
-    background: #a11c78;
-    padding-top: 2.5em;
-    font-size: 1em;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    align-content: flex-start;
-    position: fixed;
-    top: 0;
-    height: 100%;
-    left: 100%;
-    transition: left cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
-  }
-
-  .nav.show .nav-lists{
-    left: 30%;
-    right: 0;
-    z-index: 10;
-  }
-  .nav-lists .nav-item{
-    display: block;
-    width: 100%;
-    flex: 1 100%;
-  }
-
-  .nav-show, .nav-close {
-    width: 32px;
-    height: 100%;
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    right: 0;
-  }
-
-   .nav-mark {
-    position: fixed;
-    background: #000;
-    opacity: 0;
-    transition: opacity cubic-bezier(0.215, 0.610, 0.355, 1) .3s;
-  }
-
-  .nav.show .nav-mark {
-    width: 100%;
-    height: 100%;
-    opacity: .5;
-  }
-
-  .nav-show {
-   z-index: 0;
-  }
-
-  .nav-close {
-    height: 2.5em;
-    z-index: 20;
-    right: 0;
-  }
-
-  .nav-close::before, .nav-close::after, .nav-show::before, .nav-show::after {
-    content: '';
-    display: inline-block;
-    width: 80%;
-    height: 2px;
-    background: #fff;
-    position: absolute;
-    top: 50%;
-    border-radius: 1px;
-  }
-
-  .nav-close::before {
-    transform: rotate(45deg)
-  }
-
-  .nav-close::after {
-    transform: rotate(-45deg)
-  }
-
-  .nav-show::before {
-    top: 35%;
-    transform: rotate(-30deg)
-  }
-
-  .nav-show::after {
-    top: 65%;
-    transform: rotate(30deg)
-  } */
 }
 
 /* footer */
@@ -352,77 +249,6 @@ img {
     display: block;
   }
 }
-
-
-/* footer-1 */
-/* .footer-1 {
-  background: url(../images/footer-bg.png) no-repeat center bottom;
-  background-size: 100% 100%;
-  height: auto;
-  padding: 35px 45px;
-}
-
-.footer-1 .container {
-  line-height: 1.5;
-  font-size: 0;
-  flex-wrap: nowrap;
-}
-
-.link-list {
-  width: 33.333333%;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 2.2857;
-}
-
-.footer-1 .link-item {
-  list-style: none;
-  color: #777;
-}
-
-.footer-1 .link-title {
-  color: #a11c78;
-  font-size: 16px;
-  font-size: 1rem;
-}
-
-@media (max-width: 845px) {
-  .footer-1 {
-    text-align: left;
-  }
-}
-
-@media (max-width: 768px) {
-  .footer-1 {
-    padding: 20px 0;
-  }
-  .footer-1 .container {
-    justify-content: center;
-  }
-  .link-list {
-    display: none;
-    text-align: center;
-  }
-  .link-copyright {
-    display: inline-block;
-    width: auto;
-    flex: 1;
-  }
-
-  .link-item {
-    display: none;
-  }
-
-  .link-item.phone-show {
-    display: block;
-  }
-
-  .link-title {
-    display: none;
-  }
-} */
 
 /* banner */
 .banner {
@@ -527,4 +353,69 @@ img {
     margin: 5px 2.5px;
   }
 
+}
+
+/* toolbar */
+.toolbar {
+  position: fixed;
+  left: 50%;
+  z-index: 500;
+  bottom: 90px;
+  margin-left: 720px;
+}
+
+.toolbar-item {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #d2d2d2;
+  margin-top: 5px;
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+}
+
+.toolbar-item-share {
+  background: url(../images/share.png) no-repeat left top;
+  position: relative;
+}
+
+.toolbar-item-share::before {
+  content: url(../images/qrcode.png);
+  position: absolute;
+  right: 100%;
+  bottom: 0;
+  opacity: 0;
+  transform-origin: right bottom;
+  transform: scale(0);
+  transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+}
+
+.toolbar-item-share:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.toolbar-item-top {
+  background: url(../images/backtop.png) no-repeat left top;
+}
+
+.toolbar-item:hover {
+  background-position: left bottom;
+}
+
+@media (max-width: 1350px ) and (min-width: 1250px) {
+  .toolbar {
+    margin-left: 620px;
+  }
+}
+
+@media (max-width: 1250px ) and (min-width: 979px) {
+  .toolbar {
+    margin-left: 470px;
+  }
+}
+
+@media (max-width: 979px) and (min-width: 808px) {
+  .toolbar {
+    display: none;
+  }
 }

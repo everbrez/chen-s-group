@@ -7,5 +7,5 @@ window.addEventListener('load', function() {
     paginationClickable :true,
     pagination: '.swiper-pagination',
     autoplayDisableOnInteraction: false,
-  })
+  });
 }, false)
