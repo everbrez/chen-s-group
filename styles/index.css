@@ -2,17 +2,23 @@
 h1.title {
   color: #a11c78;
   font-size: 24px;
-  font-weight: normal;
+  font-size: 1.5rem;
+  font-weight: bold;
   margin: 0 0 30px;
   text-align: center;
 }
 
-.research, .news, .achievement {
+.research,
+.news,
+.achievement {
   padding-top: 50px;
 }
 
 @media (min-width: 1350px) {
-  .research .container, .news .container, .achievement .container {
+
+  .research .container,
+  .news .container,
+  .achievement .container {
     max-width: 1300px;
   }
 }
@@ -28,7 +34,9 @@ h1.title {
   justify-content: space-between;
   flex-flow: row nowrap;
   align-items: flex-start;
+  justify-content: flex-start;
 }
+
 .research-content .research-item {
   box-sizing: border-box;
   width: 50%;
@@ -53,6 +61,7 @@ h1.title {
 
 .research-item-title {
   font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   color: #333;
 }
@@ -61,18 +70,28 @@ h1.title {
   color: #969696;
 }
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
+  .research-item-content .research-item-icon {
+    width: 32px;
+    height: auto;
+  }
+
+  .research-item .research-item-content {
+    padding-left: 42px;
+  }
+
+  .research-content .research-item:last-child {
+    margin-top: 1.25em;
+  }
+
   .research-content {
     flex-flow: row wrap;
   }
+
   .research-content .research-item {
     flex: 1 100%;
     padding-left: 0px;
     padding-right: 0px;
-  }
-
-  .research-content .research-item:last-child {
-    margin-top: 1em;
   }
 }
 
@@ -81,7 +100,8 @@ h1.title {
   background-color: #f5f5f5;
 }
 
-.news .news-content, .achievement .achievement-content {
+.news .news-content,
+.achievement .achievement-content {
   font-size: 0;
   display: flex;
   justify-content: space-between;
@@ -89,7 +109,8 @@ h1.title {
   align-items: flex-start;
 }
 
-.news-content .news-item, .achievement-content .achievement-item {
+.news-content .news-item,
+.achievement-content .achievement-item {
   display: inline-block;
   position: relative;
   flex: 1;
@@ -101,13 +122,15 @@ h1.title {
   margin-right: 1.5384615%;
   height: 21.538461%;
 }
+
 .achievement-content .achievement-item {
   width: 30.7692307%;
   margin-right: 3.8461538%;
   height: 17.2307691%;
 }
 
-.news-content .news-item:last-child, .achievement-content .achievement-item:last-child{
+.news-content .news-item:last-child,
+.achievement-content .achievement-item:last-child {
   margin-right: 0;
 }
 
@@ -130,17 +153,20 @@ h1.title {
   bottom: 0;
 }
 
-.news-item img, .achievement-item img {
+.news-item img,
+.achievement-item img {
   width: 100%;
   height: 100%;
 }
 
-.news .more, .achievement .more {
+.news .more,
+.achievement .more {
   text-align: center;
   padding: 26px 0;
 }
 
-.news .more a, .achievement .more a {
+.news .more a,
+.achievement .more a {
   display: inline-block;
   color: #969696;
   padding: 14px 20px;
@@ -150,7 +176,8 @@ h1.title {
   line-height: 1;
 }
 
-.news .more a:hover, .achievement .more a:hover {
+.news .more a:hover,
+.achievement .more a:hover {
   background: #a11c78;
   color: #fff;
   border-color: #a11c78;
@@ -158,45 +185,60 @@ h1.title {
 
 .achievement-item-detail {
   font-size: 16px;
+  font-size: 1rem;
   margin-top: 17px;
   line-height: 1.5625;
   color: #333;
 }
 
-.achievement-item:hover .achievement-item-detail{
+.achievement-item:hover .achievement-item-detail {
   color: #a11c78;
 }
 
 @media (max-width: 603px) {
-  .news .news-content, .achievement .achievement-content {
+
+  .news .news-content,
+  .achievement .achievement-content {
     flex-flow: row wrap;
     justify-content: center;
   }
-  .news-content .news-item, .achievement-content .achievement-item {
+
+  .news-content .news-item,
+  .achievement-content .achievement-item {
     flex: 1 100%;
     margin: 0;
-    margin-bottom: 2em;
-    font-size: 1rem;
+    margin-bottom: 2rem;
   }
+
   .news-item .news-item-detail {
     bottom: 0;
   }
+
   .news-content .news-item {
     max-width: 420px;
   }
+
   .achievement-content .achievement-item {
     max-width: 400px;
   }
 
-  .news .more, .achievement .more {
+  .news .more,
+  .achievement .more {
     padding: 13px 0;
   }
 
-  .research, .news, .achievement {
+  .research,
+  .news,
+  .achievement {
     padding-top: 1em;
   }
+
   h1.title {
     margin-bottom: 1em;
+  }
+
+  .news-item .news-item-detail {
+    padding: 20px 20px 0;
   }
 }
 
@@ -221,4 +263,13 @@ h1.title {
 .swiper-container img {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+
+  .swiper-container-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: .2rem;
+  }
 }

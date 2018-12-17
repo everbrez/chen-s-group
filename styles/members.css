@@ -21,6 +21,7 @@
 
 .member-detail li.name {
   font-size: 18px;
+  font-size: 1.125rem;
   margin-bottom: 15px;
   padding-top: 3px;
 }
@@ -34,6 +35,7 @@
 .member-category-title {
   color: #a11c78;
   font-size: 24px;
+  font-size: 1.5rem;
   padding-bottom: 19px;
   border-bottom: 1px solid #d2d2d2;
   margin: 40px 0 39px;

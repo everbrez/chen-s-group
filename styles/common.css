@@ -1,6 +1,13 @@
-body {
+body, html {
   font-size: 16px;
   color: #333;
+  font-family: "Microsoft YaHei", "Microsoft YaHei Light", SimSun, sans-serif, Helvetica, Arial;
+}
+
+@media (max-width: 768px) {
+  body, html {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -12,7 +19,7 @@ a:active, a:visited, a:focus {
   color: inherit;
 }
 
-a:hover, a:active {
+a[href]:hover, a[href]:active {
   color: #a11c78;
 }
 
@@ -53,7 +60,7 @@ img {
   .container {
     max-width: none;
     width: auto;
-    padding: 0 2.3%;
+    margin: 0 4%;
   }
 }
 
@@ -81,6 +88,7 @@ img {
   display: block;
   color: #a11c78;
   font-size: 14px;
+  font-size: 0.875rem;
   text-align: center;
   line-height: 1;
   font-weight: 6500;
@@ -93,6 +101,7 @@ img {
 
 .header-title .ch-title {
   font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: 12px;
 }
 
@@ -134,7 +143,7 @@ img {
 }
 
 .nav-lists .nav-item:hover {
-  background: #8d1669;
+  background: #851f66;
 }
 
 .nav-item .nav-link {
@@ -143,7 +152,12 @@ img {
   color: #fff;
   line-height: 45px;
   font-size: 16px;
+  font-size: 1rem;
   width: 100%;
+}
+
+.nav-item .nav-link:hover {
+  color: #fff;
 }
 
 .nav-dropdown {
@@ -341,7 +355,7 @@ img {
 
 
 /* footer-1 */
-.footer-1 {
+/* .footer-1 {
   background: url(../images/footer-bg.png) no-repeat center bottom;
   background-size: 100% 100%;
   height: auto;
@@ -359,6 +373,7 @@ img {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
+  font-size: 0.875rem;
   line-height: 2.2857;
 }
 
@@ -370,6 +385,7 @@ img {
 .footer-1 .link-title {
   color: #a11c78;
   font-size: 16px;
+  font-size: 1rem;
 }
 
 @media (max-width: 845px) {
@@ -406,7 +422,7 @@ img {
   .link-title {
     display: none;
   }
-}
+} */
 
 /* banner */
 .banner {
@@ -417,6 +433,12 @@ img {
   .banner .container {
     max-width: none;
     padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    display: none;
   }
 }
 
@@ -431,6 +453,7 @@ img {
   padding-bottom: 11.5px;
   line-height: 1.5;
   font-size: 14px;
+  font-size: 0.875rem;
   color: #969696;
   background: url(../images/location.png) left .75em no-repeat;
   border-bottom: 1px solid #d2d2d2;
@@ -442,7 +465,7 @@ img {
 
 @media (max-width: 808px) {
   .breadcrumb .container {
-    background-position: 2.3% .75em;
+    background-position: left .75em;
   }
 }
 
@@ -453,6 +476,7 @@ img {
 .pager-list {
   text-align: center;
   font-size: 14px;
+  font-size: 0.875rem;
   color: #888e9c;
 }
 .pager-item {
@@ -486,4 +510,21 @@ img {
   .pager {
     margin-bottom: 19px;
   }
+
+  .pager-list {
+    font-size: 12px;
+  }
+
+  .phone-hide {
+    display: none;
+  }
+
+  .pager-item a {
+    padding: 5px 2px;
+  }
+
+  .pager-item {
+    margin: 5px 2.5px;
+  }
+
 }
