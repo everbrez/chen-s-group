@@ -1,0 +1,74 @@
+.announcement-nav{
+  margin: 24px auto 0 auto;
+  max-width: 1400px;
+  font-family: "MMicrosoftYaHei";
+  font-size:0px;
+}
+.announcement-nav a{
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+}
+.announcement-nav-first{
+    background-color: #f5f5f5;
+    margin-right:14px; 
+}
+.announcement-nav-second {
+  background-color: #a11c78;
+}
+.announcement-nav a img{
+  vertical-align: baseline;
+}
+.announcement-nav a span {
+  font-size: 16px;
+  font-size: 1rem;
+  margin-left: 20px;
+}
+.announcement-nav-first span { 
+  color: #969696;
+  line-height: 40px;
+}
+.announcement-nav-second span {
+  color: #ffffff;
+  line-height: 40px;
+}
+.announcement-container {
+  max-width: 1400px;
+  margin: 12px auto 50px auto;
+}
+.announcement-container-li{
+  padding-bottom: 36px;
+  border-bottom:1px solid #d2d2d2 
+}
+.announcement-container-li-titile{
+  padding-top:46px;
+  padding-bottom: 52px;
+}
+.announcement-container-li-titile a{
+  font-size:24px;
+  font-size: 1.5rem;
+  color: #a11c78;
+}
+.announcement-container-li-visit{
+  font-size: 16px;
+  font-size: 1rem;
+}
+.announcement-container-li-visit a:first-child{
+  margin-right: 40px;
+}
+.announcement-container-li-time{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/clock.png");
+  margin-right: 10px;
+  vertical-align: -1px;
+}
+.announcement-container-li-eye{
+  display: inline-block;
+  width: 19px;
+  height: 12px;
+  background-image: url("../images/eye.png");
+  margin-right: 10px;
+}
