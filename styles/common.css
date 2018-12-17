@@ -151,8 +151,22 @@ img {
   position: relative;
 }
 
-@media (max-width: 808px) {
-  body {
+@media (max-width: 768px) {
+  .nav-lists .nav-item {
+    width: 25%;
+    flex: 1 25%;
+  }
+
+  .nav-item .nav-link {
+    line-height: 28px;
+  }
+
+  .nav {
+    padding: 8px 0;
+  }
+
+  /* 展开菜单 */
+  /* body {
     position: relative;
     padding-top: 2.5em;
   }
@@ -252,13 +266,14 @@ img {
   .nav-show::after {
     top: 65%;
     transform: rotate(30deg)
-  }
+  } */
 }
 
 /* footer */
 .footer {
   height: 140px;
   background: #f5f5f5;
+  color: #333;
 }
 
 .footer .container {
@@ -298,18 +313,17 @@ img {
     padding: 1em 0;
     overflow: hidden;
   }
-  .footer-logo {
-    float: none;
-    flex: 1 100%;
-    line-height: 1;
-    order: 1;
+
+  .footer .container {
+    justify-content: center;
   }
 
-  .info {
-    display: block;
-    flex: 1 100%;
-    order: 2;
-    margin-top: 1em;
+  .footer-logo {
+    display: none;
+  }
+
+  .copyright span, .address span {
+    display: none;
   }
   
   .info > span {
@@ -318,6 +332,79 @@ img {
 
   .info > span span {
     white-space: nowrap;
+  }
+
+  .copyright .phone-show, .address .phone-show {
+    display: block;
+  }
+}
+
+
+/* footer-1 */
+.footer-1 {
+  background: url(../images/footer-bg.png) no-repeat center bottom;
+  background-size: 100% 100%;
+  height: auto;
+  padding: 35px 45px;
+}
+
+.footer-1 .container {
+  line-height: 1.5;
+  font-size: 0;
+  flex-wrap: nowrap;
+}
+
+.link-list {
+  width: 33.333333%;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 2.2857;
+}
+
+.footer-1 .link-item {
+  list-style: none;
+  color: #777;
+}
+
+.footer-1 .link-title {
+  color: #a11c78;
+  font-size: 16px;
+}
+
+@media (max-width: 845px) {
+  .footer-1 {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-1 {
+    padding: 20px 0;
+  }
+  .footer-1 .container {
+    justify-content: center;
+  }
+  .link-list {
+    display: none;
+    text-align: center;
+  }
+  .link-copyright {
+    display: inline-block;
+    width: auto;
+    flex: 1;
+  }
+
+  .link-item {
+    display: none;
+  }
+
+  .link-item.phone-show {
+    display: block;
+  }
+
+  .link-title {
+    display: none;
   }
 }
 
