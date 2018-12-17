@@ -2,66 +2,77 @@
  * clear ui/li
  */
  ul,li{padding: 0;list-style: none;}
-.announcement-nav{
+ /**
+ * clear p
+ */
+ p{padding: 0;margin: 0}
+.new-nav{
   margin: 24px auto 0 auto;
   max-width: 1400px;
   font-family: "MMicrosoftYaHei";
   font-size:0px;
 }
-.announcement-nav a{
+.new-nav a{
   display: inline-block;
   width: 120px;
   height: 40px;
   text-align: center;
 }
-.announcement-nav-first{
-    background-color: #f5f5f5;
+.new-nav-first{
+    background-color: #a11c78;
     margin-right:14px; 
 }
-.announcement-nav-second {
-  background-color: #a11c78;
+.new-nav-second {
+  background-color: #f5f5f5;
 }
-.announcement-nav a img{
+.new-nav a img{
   vertical-align: baseline;
 }
-.announcement-nav a span {
+.new-nav a span {
   font-size: 16px;
   font-size: 1rem;
   margin-left: 20px;
 }
-.announcement-nav-first span { 
-  color: #969696;
-  line-height: 40px;
-}
-.announcement-nav-second span {
+.new-nav-first span { 
   color: #ffffff;
   line-height: 40px;
 }
-.announcement-container {
+.new-nav-second span {
+  color: #969696;
+  line-height: 40px;
+}
+.new-container {
   max-width: 1400px;
   margin: 12px auto 50px auto;
 }
-.announcement-container-li{
+.new-container-li{
   padding-bottom: 36px;
   border-bottom:1px solid #d2d2d2 
 }
-.announcement-container-li-titile{
+.new-container-li-titile{
   padding-top:46px;
   padding-bottom: 52px;
 }
-.announcement-container-li-titile a{
+.new-container-li-container{
+  margin-bottom: 55px;
+  line-height: 1.5;
+  max-width: 976px;
+  font-size: 16px;
+  color: #969696
+}
+.new-container-li-titile a{
   font-size:24px;
   font-size: 1.5rem;
   color: #a11c78;
 }
-.announcement-container-li-visit{
+.new-container-li-visit{
   font-size: 16px;
   font-size: 1rem;
 }
-.announcement-container-li-visit a:first-child{
+.new-container-li-visit a:first-child{
   margin-right: 40px;
 }
-.announcement-container-li-time{
+.new-container-li-time{
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -69,10 +80,21 @@
   margin-right: 10px;
   vertical-align: -1px;
 }
-.announcement-container-li-eye{
+.new-container-li-eye{
   display: inline-block;
   width: 19px;
   height: 12px;
   background-image: url("../images/eye.png");
   margin-right: 10px;
+}
+.new-container-li-right{
+  display: inline-block;
+}
+.new-container-li-left{
+  display: inline-block;
+}
+@media (max-width: 1350px) {
+  .new-container-li-right {
+    display: none;
+  }
 }

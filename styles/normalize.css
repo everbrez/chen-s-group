@@ -347,7 +347,3 @@ template {
 [hidden] {
   display: none;
 }
-/**
- * clear ui/li
- */
- ul,li{padding: 0;list-style: none;}
