@@ -489,8 +489,15 @@ blockquote::before {
   }
 }
 
-@media (max-width: 979px) and (min-width: 808px) {
+@media (max-width: 979px){
   .toolbar {
+    left: auto;
+    right: 10px;
+    bottom: 40px;
+    margin-left: 0;
+  }
+
+  .toolbar-item-share {
     display: none;
   }
 }
