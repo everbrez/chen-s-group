@@ -1,0 +1,48 @@
+.article {
+  margin-right: 315px;
+  padding-right: 2em;
+  vertical-align: top;
+  margin-bottom: 60px;
+}
+
+.sidebar {
+  float: right;
+  width: 295px;
+  vertical-align: top;
+}
+
+.sidebar-item {
+  display: block;
+}
+
+.sidebar-item a {
+  display: block;
+  line-height: 46px;
+  text-align: center;
+  background: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-item a:hover {
+  background: #eee;
+}
+
+.sidebar-title a{
+  font-size: 18px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #eee;
+  border-radius: 5px 5px 0 0;
+}
+
+.sidebar-title:hover {
+
+}
+
+.article-title {
+  color: #a11c78;
+  font-size: 20px;
+  margin: 25px 0;
+}
