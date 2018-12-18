@@ -1,11 +1,14 @@
-body, html {
+body,
+html {
   font-size: 16px;
   color: #333;
   font-family: "Microsoft YaHei", "Microsoft YaHei Light", SimSun, sans-serif, Helvetica, Arial;
 }
 
 @media (max-width: 768px) {
-  body, html {
+
+  body,
+  html {
     font-size: 14px;
   }
 }
@@ -15,15 +18,19 @@ a {
   color: inherit;
 }
 
-a:active, a:visited, a:focus {
+a:active,
+a:visited,
+a:focus {
   color: inherit;
 }
 
-a[href]:hover, a[href]:active {
+a[href]:hover,
+a[href]:active {
   color: #a11c78;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 0;
   padding: 0;
 }
@@ -66,13 +73,13 @@ blockquote::before {
   margin: auto;
 }
 
-@media (max-width: 1350px ) and (min-width: 1250px) {
+@media (max-width: 1350px) and (min-width: 1250px) {
   .container {
     max-width: 1200px;
   }
 }
 
-@media (max-width: 1250px ) and (min-width: 979px) {
+@media (max-width: 1250px) and (min-width: 979px) {
   .container {
     max-width: 900px;
   }
@@ -92,7 +99,8 @@ blockquote::before {
   }
 }
 
-/* header */.header .container{
+/* header */
+.header .container {
   height: 120px;
   line-height: 120px;
   display: flex;
@@ -112,7 +120,8 @@ blockquote::before {
   vertical-align: middle;
 }
 
-.header-title .ch-title, .header-title .en-title {
+.header-title .ch-title,
+.header-title .en-title {
   display: block;
   color: #a11c78;
   font-size: 14px;
@@ -121,9 +130,11 @@ blockquote::before {
   line-height: 1;
   font-weight: 6500;
 }
-.ch-phone-name{
+
+.ch-phone-name {
   display: none;
 }
+
 .header-title .ch-title span {
   white-space: nowrap;
   line-height: 1.3;
@@ -139,9 +150,14 @@ blockquote::before {
   .header-title {
     /* display: none; */
   }
+
   .header .container {
     text-align: center;
     justify-content: center;
+  }
+
+  .header .container>a {
+    line-height: 1;
   }
 }
 
@@ -149,20 +165,28 @@ blockquote::before {
   .header .container {
     height: 5em;
   }
-  .ch-phone-name{
+
+  .ch-phone-name {
     display: inline-block;
   }
-  .ch-pc-name,.ch-pc-group{
+
+  .ch-pc-name,
+  .ch-pc-group {
     display: none;
   }
-  .header-title .ch-title{
+
+  .header-title .ch-title {
     font-size: 1.11rem;
     margin-bottom: 8px;
+  }
+
+  .header-title {
+    margin-left: 1em;
   }
 }
 
 @media (max-width: 320px) {
-  .header-title{
+  .header-title {
     margin-left: 20px;
   }
 }
@@ -247,7 +271,7 @@ blockquote::before {
   vertical-align: middle;
 }
 
-.info > span{
+.info>span {
   display: block;
   line-height: 2.5;
 }
@@ -279,19 +303,21 @@ blockquote::before {
     display: none;
   }
 
-  .copyright span, .address span {
+  .copyright span,
+  .address span {
     display: none;
   }
-  
-  .info > span {
+
+  .info>span {
     line-height: 1.5;
   }
 
-  .info > span span {
+  .info>span span {
     white-space: nowrap;
   }
 
-  .copyright .phone-show, .address .phone-show {
+  .copyright .phone-show,
+  .address .phone-show {
     display: block;
   }
 }
@@ -345,12 +371,14 @@ blockquote::before {
 .pager {
   margin-bottom: 38px;
 }
+
 .pager-list {
   text-align: center;
   font-size: 14px;
   font-size: 0.875rem;
   color: #888e9c;
 }
+
 .pager-item {
   display: inline-block;
   border: 1px solid #d6d6d6;
@@ -378,6 +406,7 @@ blockquote::before {
 .pager-more a {
   min-width: auto;
 }
+
 @media (max-width: 768px) {
   .pager {
     margin-bottom: 19px;
@@ -448,13 +477,13 @@ blockquote::before {
   background-position: left bottom;
 }
 
-@media (max-width: 1350px ) and (min-width: 1250px) {
+@media (max-width: 1350px) and (min-width: 1250px) {
   .toolbar {
     margin-left: 620px;
   }
 }
 
-@media (max-width: 1250px ) and (min-width: 979px) {
+@media (max-width: 1250px) and (min-width: 979px) {
   .toolbar {
     margin-left: 470px;
   }

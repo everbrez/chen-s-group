@@ -113,8 +113,25 @@
 
 
 @media (max-width: 600px) {
+  .picture {
+    padding: 15px 15px 17.5px;
+  }
+  .pictures-item:first-child, .pictures-item:nth-child(3n + 1) {
+    margin-left: 0;
+  }
   .pictures-item {
     max-width: none;
+    margin-left: 0;
+    flex: 1 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .pictures-content .container {
+    justify-content: space-around;
+  }
+  .pictures-item {
+    max-width: 280px;
     margin-left: 0;
     flex: 1 100%;
   }

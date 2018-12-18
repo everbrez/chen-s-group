@@ -195,6 +195,12 @@ h1.title {
   color: #a11c78;
 }
 
+@media (max-width: 813px) {
+  .news-item .news-item-detail {
+    bottom: 0;
+  }
+}
+
 @media (max-width: 603px) {
 
   .news .news-content,
@@ -210,16 +216,12 @@ h1.title {
     margin-bottom: 2rem;
   }
 
-  .news-item .news-item-detail {
-    bottom: 0;
-  }
-
   .news-content .news-item {
-    max-width: 420px;
+    max-width: 77.666%;
   }
 
   .achievement-content .achievement-item {
-    max-width: 400px;
+    max-width: 77.666%;
   }
 
   .news .more,
