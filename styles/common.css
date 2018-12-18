@@ -32,6 +32,34 @@ img {
   max-width: 100%;
 }
 
+table {
+  max-width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td {
+  border: 1px solid #969696;
+  padding: .2em .5em;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 2em;
+  position: relative;
+}
+
+blockquote::before {
+  content: '';
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #a11c78;
+}
+
 .container {
   display: block;
   max-width: 1400px;
