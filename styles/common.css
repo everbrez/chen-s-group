@@ -318,10 +318,15 @@ blockquote::before {
 
   .copyright .phone-show,
   .address .phone-show {
-    display: block;
+    display: inline;
   }
 }
 
+@media (max-width: 350px) {
+  .phone-show + a{
+    display: none;
+  }
+}
 /* banner */
 .banner {
   font-size: 0;
