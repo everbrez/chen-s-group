@@ -93,7 +93,9 @@ img {
   line-height: 1;
   font-weight: 6500;
 }
-
+.ch-phone-name{
+  display: none;
+}
 .header-title .ch-title span {
   white-space: nowrap;
   line-height: 1.3;
@@ -107,7 +109,7 @@ img {
 
 @media (max-width: 768px) {
   .header-title {
-    display: none;
+    /* display: none; */
   }
   .header .container {
     text-align: center;
@@ -118,6 +120,22 @@ img {
 @media (max-width: 553px) {
   .header .container {
     height: 5em;
+  }
+  .ch-phone-name{
+    display: inline-block;
+  }
+  .ch-pc-name,.ch-pc-group{
+    display: none;
+  }
+  .header-title .ch-title{
+    font-size: 1.11rem;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-title{
+    margin-left: 20px;
   }
 }
 
