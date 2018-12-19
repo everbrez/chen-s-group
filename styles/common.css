@@ -164,6 +164,7 @@ blockquote::before {
 @media (max-width: 553px) {
   .header .container {
     height: 5em;
+    background: none;
   }
   .header-title .ch-title, .header-title .en-title {
     display: inline-block;
