@@ -179,8 +179,8 @@ blockquote::before {
     display: none;
   }
 
-  .header-title .ch-title {
-    font-size: 1.11rem;
+  .header-title .ch-title, .header-title .en-title {
+    font-size: 1.25rem;
     margin-bottom: 8px;
   }
 
@@ -189,7 +189,7 @@ blockquote::before {
   }
 }
 
-@media(max-width: 466px) {
+@media(max-width: 553px) {
   .header .container {
     flex-flow: row wrap;
   }
@@ -199,7 +199,7 @@ blockquote::before {
   }
 
   .header .container {
-    height: 6em;
+    height: 6.5em;
   }
   .en-title {
     margin-left: .5em;
@@ -393,6 +393,12 @@ blockquote::before {
   }
 }
 
+@media (max-width: 768px) {
+  .breadcrumb {
+    margin-top: 7px;
+  }
+}
+
 /* pager */
 .pager {
   margin-bottom: 38px;
@@ -524,6 +530,12 @@ blockquote::before {
   }
 
   .toolbar-item-share {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar {
     display: none;
   }
 }

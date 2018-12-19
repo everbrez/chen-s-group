@@ -244,11 +244,11 @@ h1.title {
   .news-item .news-item-detail, .achievement-item-detail {
     display: inline-block;
     float: right;
-    padding: 20px 20px 0;
     position: static;
     background: inherit;
     color: #333;
     padding: 0 0 0 20px;
+    margin-top: 0;
   }
 }
 

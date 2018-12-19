@@ -52,11 +52,16 @@
 .announcement-container-li-titile a{
   font-size:24px;
   font-size: 1.5rem;
+  color: #333;
+}
+
+.announcement-container-li-titile a:hover {
   color: #a11c78;
 }
 .announcement-container-li-visit{
   font-size: 16px;
   font-size: 1rem;
+  color: #969696;
 }
 .announcement-container-li-visit a:first-child{
   margin-right: 40px;
@@ -75,4 +80,19 @@
   height: 12px;
   background-image: url("../images/eye.png");
   margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .announcement-container-li-titile {
+    padding-top: 23px;
+    padding-bottom: 26px;
+  }
+
+  .announcement-container-li {
+    padding-bottom: 18px;
+  }
+
+  .announcement-container {
+    margin: 6px auto 25px auto;
+  }
 }
