@@ -126,13 +126,32 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .pictures-content .container {
-    justify-content: space-around;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
   }
   .pictures-item {
-    max-width: 280px;
-    margin-left: 0;
-    flex: 1 100%;
+    width: 100%;
+  }
+
+  .picture::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .picture img{
+    max-width: 30%;
+    float: left;
+    vertical-align: top;
+  }
+
+  .picture .picture-detail, .picture .picture-status {
+    margin-left: 35%;
+    vertical-align: top;
+  }
+  .picture .picture-detail {
+    margin-top: 0;
   }
 }

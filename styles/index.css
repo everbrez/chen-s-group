@@ -206,7 +206,7 @@ h1.title {
   .news .news-content,
   .achievement .achievement-content {
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .news-content .news-item,
@@ -214,14 +214,7 @@ h1.title {
     flex: 1 100%;
     margin: 0;
     margin-bottom: 2rem;
-  }
-
-  .news-content .news-item {
-    max-width: 77.666%;
-  }
-
-  .achievement-content .achievement-item {
-    max-width: 77.666%;
+    display: flex;
   }
 
   .news .more,
@@ -239,8 +232,23 @@ h1.title {
     margin-bottom: 1em;
   }
 
-  .news-item .news-item-detail {
+  .news-content .news-item img,
+  .achievement-content .achievement-item img {
+    max-width: 30%;
+  }
+
+  .news-content .news-item:last-child, .achievement-content .achievement-item:last-child {
+    margin-bottom: 1em;
+  }
+
+  .news-item .news-item-detail, .achievement-item-detail {
+    display: inline-block;
+    float: right;
     padding: 20px 20px 0;
+    position: static;
+    background: inherit;
+    color: #333;
+    padding: 0 0 0 20px;
   }
 }
 
