@@ -95,4 +95,7 @@
   .announcement-container {
     margin: 6px auto 25px auto;
   }
+  .announcement-container-li-titile a{
+    font-size:1.125rem;
+  }
 }
